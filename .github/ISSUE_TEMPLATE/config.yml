@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private help with your own app
+    url: https://selfoia.com/free-check
+    about: "Don't post details of your app here. Send us your app instead: within 2 business days you get a written reply. Free, no call needed."
+  - name: The checklist on selfoia.com
+    url: https://selfoia.com/checklist
+    about: The canonical version of the checklist, with a 2-minute self-test per check.

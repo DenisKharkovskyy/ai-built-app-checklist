@@ -1,0 +1,92 @@
+name: Suggest a new check
+description: A common problem in apps built with AI tools that E01–E24 don't cover yet.
+title: "[New check]: "
+labels: ["new-check"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the checklist. Please read CONTRIBUTING.md first.
+
+        **Never post secrets** (API keys, tokens, passwords, connection strings), **real user data**, or problems you found in **someone else's app**. Want private help with your own app? Use the free check at https://selfoia.com/free-check instead.
+  - type: input
+    id: problem
+    attributes:
+      label: The problem, in a few words
+      placeholder: "e.g. Password reset links that never expire"
+    validations:
+      required: true
+  - type: textarea
+    id: plain-english
+    attributes:
+      label: What it means for the owner
+      description: In plain English, what can go wrong for the app's users or money? One or two sentences.
+    validations:
+      required: true
+  - type: dropdown
+    id: zone
+    attributes:
+      label: Zone
+      options:
+        - Leaks
+        - Break-ins
+        - Money
+        - Speed
+        - Safety net
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Suggested default severity
+      description: "Critical: a stranger could reach users' data or money now, without special skills or access. High: a real way to lose data, money or access that needs some effort, a login or a specific situation. Medium: makes the app weaker, slower or more expensive, but isn't an open door. Low: good practice."
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: "Links to official documentation, peer-reviewed research, public incident write-ups, or a reproducible example on your own test project. For any number, give the source and the scope: who or what was measured, how many, and when."
+    validations:
+      required: true
+  - type: textarea
+    id: self-test
+    attributes:
+      label: A 2-minute self-test (optional)
+      description: How could an owner check this safely on their own app, without coding?
+    validations:
+      required: false
+  - type: textarea
+    id: agent-check
+    attributes:
+      label: What a coding agent should look for (optional)
+      description: Files, settings or code patterns an AI coding agent could read to check this, without changing anything.
+    validations:
+      required: false
+  - type: input
+    id: platforms
+    attributes:
+      label: Platforms and stacks where you've seen it (optional)
+      placeholder: "e.g. Lovable + Supabase, Cursor + Firebase, Replit"
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before you submit
+      options:
+        - label: I searched the existing issues and E01–E24, and this isn't covered.
+          required: true
+        - label: I haven't included secrets, tokens, passwords or real user data.
+          required: true
+        - label: I'm not reporting a problem in an app I don't own.
+          required: true
+        - label: I agree that my contribution is published under CC BY 4.0.
+          required: true

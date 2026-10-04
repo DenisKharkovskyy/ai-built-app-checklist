@@ -1,0 +1,73 @@
+name: Suggest a correction
+description: A wrong or outdated fact, a moved dashboard path, a broken link, a query that doesn't work, or unclear wording.
+title: "[Correction]: "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep the checklist accurate. Please read CONTRIBUTING.md first.
+
+        **Never post secrets** (API keys, tokens, passwords, connection strings), **real user data**, or problems you found in **someone else's app**.
+  - type: dropdown
+    id: file
+    attributes:
+      label: Which file
+      options:
+        - CHECKLIST.md (for AI coding agents)
+        - SELF-TEST.md (2-minute self-tests)
+        - PROMPT.md
+        - README.md
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: check-id
+    attributes:
+      label: Check ID (if it's about one check)
+      placeholder: "e.g. E02"
+    validations:
+      required: false
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of correction
+      options:
+        - Wrong or outdated fact
+        - Dashboard path or setting name has changed
+        - Broken link
+        - SQL query or command doesn't work
+        - Default severity
+        - Unclear wording
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: What it says now
+      description: Quote the current text.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: What it should say, and why
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Needed for facts, numbers, dashboard paths and queries. Link official documentation or another public source. For a query or command, say which platform and version you ran it on.
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before you submit
+      options:
+        - label: I haven't included secrets, tokens, passwords or real user data.
+          required: true
+        - label: I agree that my contribution is published under CC BY 4.0.
+          required: true
