@@ -6,7 +6,7 @@
 
 These are 24 common problems in apps built with Lovable, Bolt, Cursor, Replit, v0, Base44 and Claude Code. They're grouped into five zones: Leaks, Break-ins, Money, Speed and Safety net. Each one comes with a self-test that takes about 2 minutes on your own app. No coding needed for most.
 
-It is written for solo founders and teams of 1–3 people without a technical background. There are two versions: [SELF-TEST.md](SELF-TEST.md) for you, and [CHECKLIST.md](CHECKLIST.md) for your AI coding tool.
+It is written for solo founders and teams of up to 15 people, usually without a technical co-founder. There are two versions: [SELF-TEST.md](SELF-TEST.md) for you, and [CHECKLIST.md](CHECKLIST.md) for your AI coding tool.
 
 Version: 2026-09-27 · Human version: [selfoia.com/checklist](https://selfoia.com/checklist) · Agent version: [selfoia.com/checklist.md](https://selfoia.com/checklist.md)
 
@@ -121,7 +121,7 @@ For example:
 
 ## Maintained by SELFOIA
 
-SELFOIA is a software engineering company in Bucharest, Romania. We review, fix and speed up apps that founders built with AI tools like Lovable, Bolt, Cursor, Replit, v0, Base44 and Claude Code, so they don't leak, break or burn money as they grow. SELFOIA S.R.L. is led by [Denys Kharkovskyy](https://selfoia.com/team/denys-kharkovskyy), founder and lead engineer.
+SELFOIA is a software engineering company in Bucharest, Romania. We review, fix and speed up apps that founders built with AI tools like Lovable, Bolt, Cursor, Replit, v0, Base44 and Claude Code, so they don't leak, break or burn money as they grow. We also build new apps from scratch. SELFOIA S.R.L. is led by [Denys Kharkovskyy](https://selfoia.com/team/denys-kharkovskyy), founder and lead engineer.
 
 [selfoia.com](https://selfoia.com) · [Free check](https://selfoia.com/free-check)
 
